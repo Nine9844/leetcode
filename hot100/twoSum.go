@@ -1,5 +1,12 @@
 package hot100
 
+/*
+问题总结：
+1、for循环使用不熟练：for i,x :=range nums {} 用逗号隔开   for i:=0;i<len(nums);i++ {} 用分号隔开
+2、个人思路只有暴力解法，使用双重for循环。在快速查找、去重、统计频率、缓存、映射关系、集合操作、唯一标识、解决冲突都可以考虑到使用哈希表，在golang中哈希表通过map展现
+3、不能很好的判别复杂度
+*/
+
 func TwoSum(nums []int, target int) []int {
 	//官方中哈希表解法
 	hashMap := map[int]int{}

@@ -1,5 +1,12 @@
 package hot100
 
+/*
+最长连续序列
+2025/03/02 勉强解出
+问题：1、未考虑到数组中会有多个连续序列
+2、sort的使用
+*/
+
 func LongestConsecutive(nums []int) int {
 
 	//官方解法  使用哈希表
