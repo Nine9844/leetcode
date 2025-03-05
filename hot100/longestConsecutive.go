@@ -5,6 +5,7 @@ package hot100
 2025/03/02 勉强解出
 问题：1、未考虑到数组中会有多个连续序列
 2、sort的使用
+3、数据提前处理
 */
 
 func LongestConsecutive(nums []int) int {
@@ -18,9 +19,11 @@ func LongestConsecutive(nums []int) int {
 	//最长
 	longestStreak := 0
 	for num := range numSet {
+		//如果小于当前数的不存在数组中
 		if !numSet[num-1] {
 			currentNum := num
 			currentStreak := 1
+			//看当前数的下一个是否存在数组中，存在继续想寻找连续的数组
 			for numSet[currentNum+1] {
 				currentNum++
 				currentStreak++

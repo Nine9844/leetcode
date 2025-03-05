@@ -5,6 +5,11 @@ import "lk/hot100"
 
 func main() {
 
+	//三数之和
+	threeSum := []int{-1, 0, 1, 2, -1, -4}
+	resultThreeSum := hot100.ThreeSum(threeSum)
+	fmt.Println("threeSum:", resultThreeSum)
+
 	//移动0
 	zeroInts := []int{0, 1, 0, 3, 12}
 	resultZero := hot100.MoveZeros(zeroInts)
