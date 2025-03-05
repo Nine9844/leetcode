@@ -5,6 +5,11 @@ import "lk/hot100"
 
 func main() {
 
+	//盛最多水的容器
+	maxArea := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
+	maxAreaResult := hot100.MaxArea(maxArea)
+	fmt.Println("maxAreaResult:", maxAreaResult)
+
 	//三数之和
 	threeSum := []int{-1, 0, 1, 2, -1, -4}
 	resultThreeSum := hot100.ThreeSum(threeSum)
