@@ -5,6 +5,11 @@ import "lk/hot100"
 
 func main() {
 
+	//无重复字符最长字串
+	lengthOfLongestSubstring := "abcabcbb"
+	lengthOfLongestSubstringResult := hot100.LengthOfLongestSubstring(lengthOfLongestSubstring)
+	fmt.Println("lengthOfLongestSubstring:", lengthOfLongestSubstringResult)
+
 	//盛最多水的容器
 	maxArea := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
 	maxAreaResult := hot100.MaxArea(maxArea)
